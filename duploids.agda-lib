@@ -1,0 +1,8 @@
+include:
+  .
+depend:
+  standard-library-1.7
+flags:
+  --safe
+  --without-K
+  --exact-split
