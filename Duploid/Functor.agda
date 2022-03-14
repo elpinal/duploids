@@ -20,5 +20,5 @@ record Functor {o₁ ℓ₁ o₂ ℓ₂} (𝒞 : Duploid o₁ ℓ₁) (𝒟 : Du
   open PF.Functor F
 
   field
-    F-wrap-Thunkable : forall {N : 𝒞.Ob ⊝} -> Linear (F₁ (𝒞.wrap {N = N}))
+    F-wrap-Thunkable : forall {N : 𝒞.Ob ⊝} -> Thunkable (F₁ (𝒞.wrap {N = N}))
     F-force-Linear : forall {P : 𝒞.Ob +} -> Linear (F₁ (𝒞.force {P = P}))
